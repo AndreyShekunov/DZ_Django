@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aca9b694-f01d-4dca-b698-6a26a046d709" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_1_app/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_1_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DZ_Django/dz_2_app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ_Django/DZ_Django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DZ_Django/DZ_Django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ_Django/DZ_Django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DZ_Django/DZ_Django/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ_Django/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/DZ_Django/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DZ_Django/log/django.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,23 +36,41 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AndreyShekunov&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c7723568-926a-4f17-8b13-8f280256220e" />
+        <option name="url" value="https://github.com/AndreyShekunov/DZ_Django.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2ci7xy0OD6nXwzm6UnOwhoxjvbS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/andy/PycharmProjects/Django",
     "settings.editor.selected.configurable": "project.scopes"
   }
 }]]></component>
@@ -69,11 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1708582845403</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Домашняя работа 1">
+      <option name="closed" value="true" />
+      <created>1708584758335</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708584758335</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Домашняя работа 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Домашняя работа 1" />
   </component>
 </project>
