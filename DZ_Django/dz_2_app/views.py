@@ -86,6 +86,53 @@ def create_order(request):
         return JsonResponse({'message': 'Заказ успешно создан'}, status=201)
 
 
+def delete_order(request, order_id):
+    order = Order.objects.get(id=order_id)
+    order.delete()
+    return JsonResponse({'message': 'Order deleted successfully'}, status=204)
+
+#Создание главной страницы
+def index(request):
+    return render(request, 'index.html')
+
+
+# Вывод списока заказанных клиентом товаров
+def index(request):
+    if request.method == 'POST':
+        client_name = request.POST.get('client_name')
+        days = int(request.POST.get('days'))
+
+        if days in [7, 30, 365]:
+            today = datetime.now().date()
+            start_date = today - timedelta(days=days)
+
+            try:
+                client = Client.objects.get(name=client_name)
+                orders = Order.objects.filter(client=client, order_date__range=[start_date, today])
+
+                ordered_products_list = []
+                unique_products = set()
+                for order in orders:
+                    for product in order.products.all():
+                        if product not in unique_products:
+                            ordered_products_list.append(product)
+                            unique_products.add(product)
+
+                context = {
+                    'ordered_products': ordered_products_list,
+                    'days': days
+                }
+                return render(request, 'ordered_products.html', context)
+
+            except Client.DoesNotExist:
+                return HttpResponse("Client not found")
+
+        else:
+            return HttpResponse("Invalid number of days")
+
+    return render(request, 'index.html')
+
+
 def get_all_orders(request):
     orders = Order.objects.all()
     data = [{'client': order.client.name, 'total_amount': str(order.total_amount), 'order_date': order.order_date} for

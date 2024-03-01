@@ -16,4 +16,6 @@ urlpatterns = [
     path('orders/', views.get_all_orders, name='get_all_orders'),
     path('orders/<int:order_id>/update/', views.update_order, name='update_order'),
     path('orders/<int:order_id>/delete/', views.delete_order, name='delete_order'),
+
+    path('', views.index, name='index'),
 ]

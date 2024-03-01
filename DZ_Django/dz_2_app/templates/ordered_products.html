@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Ordered Products for last {{ days }} days:</h1>
+<ul>
+    {% for product in ordered_products %}
+        <li>{{ product.name }} - {{ product.description }} - ${{ product.price }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
